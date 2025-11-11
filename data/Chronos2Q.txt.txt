@@ -1,0 +1,10 @@
+=== Model performance (quarterly mean, EUR/NOK) ===
+Observations: 103
+RMSE (level): 0.214455
+MAE  (level): 0.153041
+Directional accuracy: 77/102 (75.5%)
+
+=== Diebold–Mariano vs Random Walk ===
+Loss: MSE | horizon h=1
+DM-statistic: -0.9088
+p-value     : 0.3635
