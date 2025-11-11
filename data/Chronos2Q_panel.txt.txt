@@ -1,0 +1,10 @@
+=== Model performance (quarterly mean, EUR/NOK – cross-learning panel) ===
+Observations: 103
+RMSE (level): 0.207206
+MAE  (level): 0.146721
+Directional accuracy: 82/102 (80.4%)
+
+=== Diebold–Mariano vs Random Walk (cross-learning panel, quarterly) ===
+Loss: MSE | horizon h=1
+DM-statistic: -1.2831
+p-value     : 0.1995
