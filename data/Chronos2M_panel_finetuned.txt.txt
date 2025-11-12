@@ -1,0 +1,10 @@
+=== Model performance (monthly mean, EUR/NOK – past macro covariates, finetuned) ===
+Observations: 308
+RMSE (level): 0.141597
+MAE  (level): 0.097244
+Directional accuracy: 204/307 (66.4%)
+
+=== Diebold–Mariano vs Random Walk (past macro covariates, monthly, finetuned) ===
+Loss: MSE | horizon h=1
+DM-statistic: -3.1622
+p-value     : 0.0016
