@@ -42,13 +42,6 @@ All notebooks are located in `src/` and correspond to the experiment blocks in t
 - **ChronosPanelQuarterly.ipynb** — Chronos with panel/exogenous extensions, quarterly frequency.  
   Link: [`src/ChronosPanelQuarterly.ipynb`](src/ChronosPanelQuarterly.ipynb)
 
-### Finetuned Panel Models (EN-FT)
-- **ChronosPanelMonthlyFinetuned.ipynb** — Finetuned Chronos panel model, monthly frequency.  
-  Link: [`src/ChronosPanelMonthlyFinetuned.ipynb`](src/ChronosPanelMonthlyFinetuned.ipynb)
-
-- **ChronosPanelQuarterlyFinetuned.ipynb** — Finetuned Chronos panel model, quarterly frequency.  
-  Link: [`src/ChronosPanelQuarterlyFinetuned.ipynb`](src/ChronosPanelQuarterlyFinetuned.ipynb)
-
 ### Variable Importance / LOFO
 - **ChronosVariableImportance.ipynb** — LOFO-style variable-importance analysis (monthly & quarterly).  
   Link: [`src/ChronosVariableImportance.ipynb`](src/ChronosVariableImportance.ipynb)
