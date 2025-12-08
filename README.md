@@ -1,28 +1,69 @@
 # Chronos_FX
 
-A small collection of Jupyter notebooks used for the Chronos FX analysis (master's thesis work).
+This repository contains Jupyter notebooks used for the **Chronos-based FX forecasting experiments** in a master’s thesis. The notebooks implement monthly and quarterly walk-forward evaluations for EUR/NOK, including price-only baselines, macro-enriched variants, panel/exogenous extensions, finetuned models, and multi-FX robustness checks.
 
-Contents
-- `data/` – raw and processed data files used by the notebooks.
-- `src/` – Jupyter notebooks (monthly/quarterly, panel and price analyses).
+## Purpose
+- Benchmark **Chronos** forecasting models for **EUR/NOK level prediction**.
+- Compare model families across:
+  - Price-only inputs,
+  - Macro-financial covariates,
+  - Panel/exogenous extensions,
+  - Finetuned Chronos variants,
+  - Multi-FX experiments.
+- Provide reproducible notebooks aligned with the thesis evaluation design.
 
-Quick start
-1. Create and activate a virtual environment (recommended):
+## Repository Structure
+- `data/` — raw and processed data files used by the notebooks.
+- `src/` — Jupyter notebooks for modelling and evaluation.
+- `requirements.txt` — pinned dependencies.
+- `LICENSE` — MIT License.
 
-	python -m venv .venv
-	.\.venv\Scripts\Activate.ps1
+## Notebooks
+All notebooks are located in `src/` and correspond to the experiment blocks in the thesis.
 
-2. Install dependencies:
+### Price-Only Models (PO)
+- **ChronosPriceMonthly.ipynb** — Chronos price-only model, monthly frequency.  
+  Link: [`src/ChronosPriceMonthly.ipynb`](src/ChronosPriceMonthly.ipynb)
 
-	pip install -r requirements.txt
+- **ChronosPriceQuarterly.ipynb** — Chronos price-only model, quarterly frequency.  
+  Link: [`src/ChronosPriceQuarterly.ipynb`](src/ChronosPriceQuarterly.ipynb)
 
-3. Start Jupyter and open the notebooks in `src/`:
+### Macro-Enriched Models (EN)
+- **ChronosMacroMonthly.ipynb** — Chronos with selected macro-financial covariates, monthly frequency.  
+  Link: [`src/ChronosMacroMonthly.ipynb`](src/ChronosMacroMonthly.ipynb)
 
-	jupyter notebook
+- **ChronosMacroQuarterly.ipynb** — Chronos with selected macro-financial covariates, quarterly frequency.  
+  Link: [`src/ChronosMacroQuarterly.ipynb`](src/ChronosMacroQuarterly.ipynb)
 
-License
-This repository is released under the MIT License. See `LICENSE` for details.
+### Panel / Exogenous-Extended Models (EN-EX)
+- **ChronosPanelMonthly.ipynb** — Chronos with panel/exogenous extensions, monthly frequency.  
+  Link: [`src/ChronosPanelMonthly.ipynb`](src/ChronosPanelMonthly.ipynb)
 
-Notes
-- The notebooks are intended for exploration and reproduction of results. Adjust package versions in `requirements.txt` as needed.
+- **ChronosPanelQuarterly.ipynb** — Chronos with panel/exogenous extensions, quarterly frequency.  
+  Link: [`src/ChronosPanelQuarterly.ipynb`](src/ChronosPanelQuarterly.ipynb)
 
+### Finetuned Panel Models (EN-FT)
+- **ChronosPanelMonthlyFinetuned.ipynb** — Finetuned Chronos panel model, monthly frequency.  
+  Link: [`src/ChronosPanelMonthlyFinetuned.ipynb`](src/ChronosPanelMonthlyFinetuned.ipynb)
+
+- **ChronosPanelQuarterlyFinetuned.ipynb** — Finetuned Chronos panel model, quarterly frequency.  
+  Link: [`src/ChronosPanelQuarterlyFinetuned.ipynb`](src/ChronosPanelQuarterlyFinetuned.ipynb)
+
+### Variable Importance / LOFO
+- **ChronosVariableImportance.ipynb** — LOFO-style variable-importance analysis (monthly & quarterly).  
+  Link: [`src/ChronosVariableImportance.ipynb`](src/ChronosVariableImportance.ipynb)
+
+- **ChronosFinetuning.ipynb** — LOFO-guided finetuning / covariate-selection workflow.  
+  Link: [`src/ChronosFinetuning.ipynb`](src/ChronosFinetuning.ipynb)
+
+### Multi-FX Experiments
+- **ChronosMultiFX.ipynb** — Multi-FX monthly & quarterly runs for robustness checks.  
+  Link: [`src/ChronosMultiFX.ipynb`](src/ChronosMultiFX.ipynb)
+
+## Quick Start
+1. Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Linux/macOS
+# .\.venv\Scripts\Activate.ps1  # PowerShell (Windows)
