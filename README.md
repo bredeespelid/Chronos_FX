@@ -10,7 +10,7 @@ This repository contains a single Jupyter notebook (`Chronos_Main.ipynb`) with t
 ---
 
 ## Contents
-- **`Chronos_Main.ipynb`** — end-to-end workflow: data handling, feature variants, walk-forward evaluation, comparisons, and robustness runs.  
+- **`Chronos_Main2.ipynb`** — end-to-end workflow: data handling, feature variants, walk-forward evaluation, comparisons, and robustness runs.  
   Link: [`Chronos_Main.ipynb`](https://github.com/bredeespelid/Chronos_FX/blob/main/Chronos2_Main.ipynb)
 - `data/` — raw/processed datasets used by the notebook (if applicable).
 - `requirements.txt` — pinned dependencies.
